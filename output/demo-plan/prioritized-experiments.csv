@@ -1,0 +1,3 @@
+rank,id,name,metric,score,recommendation,impact,confidence,strategic_fit,effort,risk,time_to_signal,hypothesis
+1,exp-001,pqa-triggered outbound,pilot_start_rate,1.1306,defer,1.944,2.5,2.5,2.5,1.5,2.0,pqa-triggered outbound improves pilot start rate
+2,exp-002,security-first enterprise sequence,sales_cycle_days,0.9311,defer,0.946,2.5,2.5,1.5,1.5,2.0,leading with trust collateral reduces sales cycle
