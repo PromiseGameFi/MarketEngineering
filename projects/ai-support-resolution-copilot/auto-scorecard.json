@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-02-28 01:42 UTC",
+  "input_csv": "/Users/computer/Documents/GitHub/MarketEngineering/skills/ai-gtm-principal-engineer/assets/templates/crm-export.template.csv",
+  "metrics": {
+    "mql_to_sql_conversion": 1.0,
+    "sql_to_opportunity_conversion": 1.0,
+    "opportunity_win_rate": 0.625,
+    "avg_sales_cycle_days": 21.75,
+    "avg_deal_size": 51100.0,
+    "pipeline_velocity": 14683.908045977012,
+    "activation_rate": 1.0,
+    "ttfv_days": 7.0,
+    "ttpv_days": 20.0,
+    "pilot_to_production_conversion": 0.5,
+    "escalation_rate": 0.043358568479008944,
+    "hallucination_rate": 0.02905982905982906,
+    "grounded_response_rate": 0.9709401709401709
+  },
+  "targets": {
+    "mql_to_sql_conversion": 0.82,
+    "sql_to_opportunity_conversion": 0.75,
+    "opportunity_win_rate": 0.45,
+    "avg_sales_cycle_days": 26.0,
+    "activation_rate": 0.88,
+    "ttfv_days": 10.0,
+    "ttpv_days": 22.0,
+    "pilot_to_production_conversion": 0.6,
+    "escalation_rate": 0.04,
+    "hallucination_rate": 0.02,
+    "grounded_response_rate": 0.98
+  },
+  "diagnostics": {
+    "row_count": 10,
+    "mql_accounts": 10,
+    "sql_accounts": 10,
+    "opportunity_accounts": 10,
+    "won_opportunities": 5,
+    "lost_opportunities": 3,
+    "pilot_accounts": 10,
+    "production_accounts": 5,
+    "ai_sessions_total": 7265.0,
+    "ai_escalations_total": 315.0,
+    "ai_audited_responses_total": 2925.0,
+    "ai_hallucinations_total": 85.0
+  }
+}
