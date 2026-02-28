@@ -1,0 +1,11 @@
+mql_to_sql_conversion: 0.82
+sql_to_opportunity_conversion: 0.75
+opportunity_win_rate: 0.45
+avg_sales_cycle_days: 26
+activation_rate: 0.88
+ttfv_days: 10
+ttpv_days: 22
+pilot_to_production_conversion: 0.60
+escalation_rate: 0.040
+hallucination_rate: 0.020
+grounded_response_rate: 0.980
