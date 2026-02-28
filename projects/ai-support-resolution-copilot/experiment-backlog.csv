@@ -1,0 +1,9 @@
+id,name,hypothesis,metric,baseline,target,confidence,implementation_effort,risk
+exp-001,pqa-triggered enterprise outbound,accounts crossing first_ai_resolved_ticket threshold will convert to pilot at higher rates with 24-hour outbound follow-up,pilot_start_rate,0.19,0.3,high,medium,low
+exp-002,security-first sequence for enterprise,leading with trust package and DPA language in first call reduces security review delay,security_review_cycle_days,28,17,medium,low,low
+exp-003,pilot success scorecard enforced,enforcing shared pilot success criteria within week 1 improves pilot-to-production conversion,pilot_to_production_conversion,0.34,0.52,medium,medium,low
+exp-004,agent champion enablement sprint,a structured champion enablement sprint reduces time-to-first-value after onboarding,ttfv_days,21,12,medium,medium,low
+exp-005,expansion trigger by weekly ai resolution share,crossing 35 percent AI-assisted resolution share should trigger expansion play with higher win rate,expansion_conversion_rate,0.16,0.27,medium,medium,medium
+exp-006,strict hallucination gate in pilot,blocking rollout unless hallucination audits are below threshold reduces churn risk,logo_churn_90d,0.08,0.04,high,high,medium
+exp-007,segment-specific ROI calculator,customized ROI model by ticket volume increases close rate in finance-involved deals,opportunity_win_rate,0.22,0.31,medium,low,low
+exp-008,guided implementation blueprint,a standardized implementation blueprint shortens time from signature to first_ai_resolved_ticket,time_to_activation_days,14,8,high,low,low
