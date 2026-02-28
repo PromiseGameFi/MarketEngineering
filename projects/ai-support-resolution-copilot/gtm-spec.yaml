@@ -1,0 +1,181 @@
+project:
+  name: "ai-support-resolution-copilot"
+  owner: "principal-gtm-engineering@marketengineering.local"
+  date: "2026-02-28"
+  stage: "series-a"
+  region_focus: ["us", "canada", "uk", "eu"]
+
+product:
+  category: "ai-support-copilot"
+  use_cases:
+    - "triage inbound support tickets by severity and intent"
+    - "draft grounded responses for tier-1 and tier-2 cases"
+    - "surface playbook answers from internal knowledge base"
+    - "auto-summarize escalations for human agents"
+  constraints:
+    - "no customer-facing unsupported claims"
+    - "strict p95 response latency under 4.5 seconds"
+    - "enterprise customers require security and data-processing review"
+
+icp:
+  primary_segment:
+    name: "b2b saas companies with 15-250 support agents"
+    pains:
+      - "ticket backlog and SLA breach risk"
+      - "high cost per resolved ticket"
+      - "new-hire ramp time for support teams"
+    buying_committee:
+      - "VP Customer Support"
+      - "Director of Support Operations"
+      - "Security and Compliance Lead"
+      - "Finance Controller"
+    success_metrics:
+      - "first response time"
+      - "time to resolution"
+      - "cost per resolution"
+      - "CSAT"
+
+value_hypothesis:
+  statement: "reduce median time-to-resolution by 30 percent and cost-per-resolution by 20 percent within 90 days of deployment"
+  value_proof_window_days: 90
+
+pricing_packaging:
+  motion: "hybrid"
+  entry_offer: "45-day production pilot with joint success plan"
+  core_plan: "platform + usage"
+  enterprise_addon: "advanced policy controls and private deployment options"
+
+go_to_market:
+  channels:
+    - "targeted outbound to support leaders in SaaS accounts"
+    - "product-led trial for existing in-app users"
+    - "solution-partner co-sell motion"
+  sales_motion: "sales-assisted"
+  enablement_assets:
+    - "security and trust package"
+    - "roi model by ticket volume profile"
+    - "pilot success criteria worksheet"
+    - "deployment architecture brief"
+    - "executive business case deck"
+
+instrumentation:
+  product_events:
+    - "workspace_created"
+    - "kb_connected"
+    - "first_grounded_draft_generated"
+    - "first_human_approved_ai_response"
+    - "first_ai_resolved_ticket"
+    - "team_weekly_active"
+    - "escalation_triggered"
+  funnel_events:
+    - "target_account_contacted"
+    - "discovery_completed"
+    - "pilot_started"
+    - "pilot_midpoint_review_passed"
+    - "pilot_success_criteria_met"
+    - "security_review_completed"
+    - "proposal_sent"
+    - "contract_signed"
+
+experiments:
+  - id: "exp-001"
+    name: "pqa-triggered enterprise outbound"
+    hypothesis: "accounts crossing first_ai_resolved_ticket threshold will convert to pilot at higher rates with 24-hour outbound follow-up"
+    metric: "pilot_start_rate"
+    baseline: 0.19
+    target: 0.30
+    confidence: "high"
+    strategic_fit: "very high"
+    implementation_effort: "medium"
+    time_to_signal: "short"
+    risk: "low"
+
+  - id: "exp-002"
+    name: "security-first sequence for enterprise"
+    hypothesis: "leading with trust package and DPA language in first call reduces security review delay"
+    metric: "security_review_cycle_days"
+    baseline: 28
+    target: 17
+    confidence: "medium"
+    strategic_fit: "high"
+    implementation_effort: "low"
+    time_to_signal: "medium"
+    risk: "low"
+
+  - id: "exp-003"
+    name: "pilot success scorecard enforced"
+    hypothesis: "enforcing shared pilot success criteria within week 1 improves pilot-to-production conversion"
+    metric: "pilot_to_production_conversion"
+    baseline: 0.34
+    target: 0.52
+    confidence: "medium"
+    strategic_fit: "very high"
+    implementation_effort: "medium"
+    time_to_signal: "medium"
+    risk: "low"
+
+  - id: "exp-004"
+    name: "agent champion enablement sprint"
+    hypothesis: "a structured champion enablement sprint reduces time-to-first-value after onboarding"
+    metric: "ttfv_days"
+    baseline: 21
+    target: 12
+    confidence: "medium"
+    strategic_fit: "high"
+    implementation_effort: "medium"
+    time_to_signal: "short"
+    risk: "low"
+
+  - id: "exp-005"
+    name: "expansion trigger by weekly ai resolution share"
+    hypothesis: "crossing 35 percent AI-assisted resolution share should trigger expansion play with higher win rate"
+    metric: "expansion_conversion_rate"
+    baseline: 0.16
+    target: 0.27
+    confidence: "medium"
+    strategic_fit: "high"
+    implementation_effort: "medium"
+    time_to_signal: "medium"
+    risk: "medium"
+
+  - id: "exp-006"
+    name: "strict hallucination gate in pilot"
+    hypothesis: "blocking rollout unless hallucination audits are below threshold reduces churn risk"
+    metric: "logo_churn_90d"
+    baseline: 0.08
+    target: 0.04
+    confidence: "high"
+    strategic_fit: "very high"
+    implementation_effort: "high"
+    time_to_signal: "long"
+    risk: "medium"
+
+  - id: "exp-007"
+    name: "segment-specific ROI calculator"
+    hypothesis: "customized ROI model by ticket volume increases close rate in finance-involved deals"
+    metric: "opportunity_win_rate"
+    baseline: 0.22
+    target: 0.31
+    confidence: "medium"
+    strategic_fit: "medium"
+    implementation_effort: "low"
+    time_to_signal: "short"
+    risk: "low"
+
+  - id: "exp-008"
+    name: "guided implementation blueprint"
+    hypothesis: "a standardized implementation blueprint shortens time from signature to first_ai_resolved_ticket"
+    metric: "time_to_activation_days"
+    baseline: 14
+    target: 8
+    confidence: "high"
+    strategic_fit: "high"
+    implementation_effort: "low"
+    time_to_signal: "short"
+    risk: "low"
+
+risks:
+  - "hallucinations in customer-facing drafted responses"
+  - "slow security reviews delaying enterprise close dates"
+  - "inconsistent KB quality reducing grounded response rate"
+  - "integration latency spikes during peak support windows"
