@@ -1,0 +1,9 @@
+rank,id,name,metric,score,recommendation,impact,confidence,strategic_fit,effort,risk,time_to_signal,hypothesis
+1,exp-001,pqa-triggered enterprise outbound,pilot_start_rate,2.0132,prototype,2.895,3.5,4.5,2.5,1.5,3.0,accounts crossing first_ai_resolved_ticket threshold will convert to pilot at higher rates with 24-hour outbound follow-up
+2,exp-008,guided implementation blueprint,time_to_activation_days,1.75,prototype,2.143,3.5,3.5,1.5,1.5,3.0,a standardized implementation blueprint shortens time from signature to first_ai_resolved_ticket
+3,exp-005,expansion trigger by weekly ai resolution share,expansion_conversion_rate,1.7031,prototype,3.438,2.5,3.5,2.5,2.5,2.0,crossing 35 percent AI-assisted resolution share should trigger expansion play with higher win rate
+4,exp-003,pilot success scorecard enforced,pilot_to_production_conversion,1.6765,prototype,2.647,2.5,4.5,2.5,1.5,2.0,enforcing shared pilot success criteria within week 1 improves pilot-to-production conversion
+5,exp-006,strict hallucination gate in pilot,logo_churn_90d,1.525,prototype,2.5,3.5,4.5,3.5,2.5,1.0,blocking rollout unless hallucination audits are below threshold reduces churn risk
+6,exp-002,security-first sequence for enterprise,security_review_cycle_days,1.4375,defer,1.964,2.5,3.5,1.5,1.5,2.0,leading with trust package and DPA language in first call reduces security review delay
+7,exp-004,agent champion enablement sprint,ttfv_days,1.4,defer,2.143,2.5,3.5,2.5,1.5,3.0,a structured champion enablement sprint reduces time-to-first-value after onboarding
+8,exp-007,segment-specific ROI calculator,opportunity_win_rate,1.3659,defer,2.045,2.5,2.5,1.5,1.5,3.0,customized ROI model by ticket volume increases close rate in finance-involved deals
