@@ -1,0 +1,87 @@
+project:
+  name: "example-ai-product"
+  owner: "gtm-principal@company.com"
+  date: "2026-02-28"
+  stage: "seed"
+  region_focus: ["us", "eu"]
+
+product:
+  category: "ai-copilot"
+  use_cases:
+    - "automate customer support triage"
+    - "assist agents with response drafting"
+  constraints:
+    - "high reliability required for regulated customers"
+
+icp:
+  primary_segment:
+    name: "mid-market b2b saas"
+    pains:
+      - "ticket backlog and slow response"
+      - "rising support labor cost"
+    buying_committee:
+      - "head of support"
+      - "vp operations"
+      - "security lead"
+    success_metrics:
+      - "first response time"
+      - "cost per resolved ticket"
+
+value_hypothesis:
+  statement: "reduce support handling time by 35 percent within 60 days"
+  value_proof_window_days: 60
+
+pricing_packaging:
+  motion: "hybrid"
+  entry_offer: "30-day pilot"
+  core_plan: "usage-based"
+  enterprise_addon: "advanced governance controls"
+
+go_to_market:
+  channels:
+    - "outbound to support leaders"
+    - "product-led in-app trial"
+    - "partner referral"
+  sales_motion: "sales-assisted"
+  enablement_assets:
+    - "roi calculator"
+    - "security one-pager"
+    - "deployment playbook"
+
+instrumentation:
+  product_events:
+    - "workspace_created"
+    - "data_source_connected"
+    - "first_ai_resolution"
+    - "team_weekly_active"
+  funnel_events:
+    - "demo_booked"
+    - "pilot_started"
+    - "pilot_success_criteria_met"
+    - "contract_sent"
+    - "contract_signed"
+
+experiments:
+  - id: "exp-001"
+    name: "pqa-triggered outbound"
+    hypothesis: "pqa-triggered outbound improves pilot start rate"
+    metric: "pilot_start_rate"
+    baseline: 0.18
+    target: 0.25
+    confidence: "medium"
+    implementation_effort: "medium"
+    risk: "low"
+  - id: "exp-002"
+    name: "security-first enterprise sequence"
+    hypothesis: "leading with trust collateral reduces sales cycle"
+    metric: "sales_cycle_days"
+    baseline: 74
+    target: 60
+    confidence: "medium"
+    implementation_effort: "low"
+    risk: "low"
+
+risks:
+  - "hallucinations in customer-facing responses"
+  - "slow security review in enterprise accounts"
+  - "data residency constraints for eu segment"
