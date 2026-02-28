@@ -1,0 +1,19 @@
+# Map canonical fields to your CRM/export CSV columns.
+# Remove entries you do not have; defaults are canonical names.
+
+account_id: account_id
+mql_date: mql_date
+sql_date: sql_date
+opportunity_date: opportunity_date
+close_date: close_date
+close_status: close_status
+deal_amount: deal_amount
+signup_date: signup_date
+first_value_date: first_value_date
+proven_value_date: proven_value_date
+pilot_start_date: pilot_start_date
+production_date: production_date
+ai_sessions: ai_sessions
+ai_escalations: ai_escalations
+ai_audited_responses: ai_audited_responses
+ai_hallucinations: ai_hallucinations
